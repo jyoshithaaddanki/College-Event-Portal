@@ -1,0 +1,342 @@
+/* Basic page styling */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f8;
+}
+
+/* Header */
+header {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Navigation */
+nav {
+    background-color: #141e30;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: #243b55;
+}
+
+/* Home section */
+/* Home Banner */
+#home {
+    min-height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #243b55, #141e30);
+    color: white;
+}
+
+.home-content {
+    max-width: 800px;
+}
+
+#home h2 {
+    font-size: 42px;
+    margin-bottom: 20px;
+}
+
+#home p {
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.home-button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: white;
+    color: #243b55;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.home-button:hover {
+    background-color: #ddd;
+}
+/* Events Section */
+#events {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#events h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+/* Event cards container */
+.event-container {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+/* Individual event card */
+.event-card {
+    background-color: white;
+    width: 300px;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+
+/* Event title */
+.event-card h3 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Event button */
+.event-card button {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    background-color: #243b55;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.event-card button:hover {
+    background-color: #141e30;
+}
+/* Schedule Section */
+#schedule {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+#schedule h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid #ddd;
+    padding: 15px;
+    text-align: center;
+}
+
+th {
+    background-color: #243b55;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+/* Gallery Section */
+#gallery {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+#gallery h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.gallery-container img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.gallery-container img:hover {
+    transform: scale(1.05);
+}
+/* Registration Section */
+#registration {
+    padding: 50px 20px;
+    background-color: white;
+    text-align: center;
+}
+
+#registration h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+#registrationForm {
+    max-width: 600px;
+    margin: auto;
+    text-align: left;
+    background-color: #f4f6f8;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+#registrationForm label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#registrationForm input,
+#registrationForm select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#registrationForm button {
+    width: 100%;
+    margin-top: 25px;
+    padding: 12px;
+    background-color: #243b55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#registrationForm button:hover {
+    background-color: #141e30;
+}
+
+#registrationMessage {
+    max-width: 600px;
+    margin: 20px auto;
+    font-weight: bold;
+}
+/* Contact Section */
+#contact {
+    padding: 50px 20px;
+    background-color: #f4f6f8;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 32px;
+    margin-bottom: 30px;
+}
+
+.contact-container {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-info,
+#contactForm {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    width: 100%;
+}
+
+.contact-info {
+    text-align: left;
+}
+
+#contactForm {
+    text-align: left;
+}
+
+#contactForm label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+#contactForm input,
+#contactForm textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+#contactForm button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #243b55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#contactForm button:hover {
+    background-color: #141e30;
+}
+
+#contactResult {
+    margin-top: 20px;
+    font-weight: bold;
+}
+/* Contact Responsive Design */
+@media (max-width: 768px) {
+
+    .contact-container {
+        flex-direction: column;
+    }
+
+}
